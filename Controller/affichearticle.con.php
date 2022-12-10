@@ -6,13 +6,12 @@ include("./Model/article.inc.php");
         $i = 0 ;
         foreach($article as $article)
         {
-            echo'<tr>';
-            foreach($article as $cle=>$valeur)
-            {   
-                echo"<td>$valeur</td>";
-                
-            }
-        echo '</tr>';
+         echo "<tr>";
+         echo "<td>"; echo $article["Reference_Article"]; echo "</td>";
+         echo "<td>"; echo $article["Nom_Article"]; echo "</td>";
+         echo "<td>"; echo $article["Prix_Article"]; echo "</td>";
+         echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="100" width="100"> <?php echo "</td>";
+         echo "</tr>";
         if (++$i == 15) break;
         }
     } 
@@ -23,13 +22,12 @@ include("./Model/article.inc.php");
         $i = 0 ;
         foreach($article as $article)
         {
-            echo'<tr>';
-            foreach($article as $cle=>$valeur)
-            {   
-                echo"<td>$valeur</td>";
-                
-            }
-        echo '</tr>';
+            echo "<tr>";
+            echo "<td>"; echo $article["Reference_Article"]; echo "</td>";
+            echo "<td>"; echo $article["Nom_Article"]; echo "</td>";
+            echo "<td>"; echo $article["Prix_Article"]; echo "</td>";
+            echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="100" width="100"> <?php echo "</td>";
+            echo "</tr>";
         }
     }
 elseif(!empty($_POST['rech']))
@@ -39,13 +37,12 @@ elseif(!empty($_POST['rech']))
     $i = 0 ;
     foreach($article as $article)
     {
-        echo'<tr>';
-        foreach($article as $cle=>$valeur)
-        {   
-            echo"<td>$valeur</td>";
-            
-        }
-    echo '</tr>';
+        echo "<tr>";
+         echo "<td>"; echo $article["Reference_Article"]; echo "</td>";
+         echo "<td>"; echo $article["Nom_Article"]; echo "</td>";
+         echo "<td>"; echo $article["Prix_Article"]; echo "</td>";
+         echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="100" width="100"> <?php echo "</td>";
+         echo "<tr>";
     if (++$i == 15) break;
     }
 }
