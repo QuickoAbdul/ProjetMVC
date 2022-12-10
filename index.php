@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/projetmvc/index.php">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/projetmvc/index.php">Accueil <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/projetmvc/Vue/conseils.php">Conseils</a>
@@ -91,9 +91,10 @@
                         </h5>
                             <p class="card-text">  
                                 <form action="" method="post">
-                                    <input id="rech" name="rech" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <input id="rech" name="rech" class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                                    (Par exemple: Bande)
                                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                        OK
+                                    Rechercher
                                     </button>
                                 </form>
                             </p>
