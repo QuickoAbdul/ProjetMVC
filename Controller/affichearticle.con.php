@@ -8,9 +8,10 @@ include("./Model/article.inc.php");
         {
          echo "<tr>";
          echo "<td>"; echo $article["Reference_Article"]; echo "</td>";
-         echo "<td>"; echo $article["Nom_Article"]; echo "</td>";
-         echo "<td>"; echo $article["Prix_Article"]; echo "</td>";
-         echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="100" width="100"> <?php echo "</td>";
+         echo "<td>"; echo $article["Nom_Article"] ; echo "</td>";
+         echo "<td>"; echo $article["Prix_Article"]; echo "€</td>";
+         echo "<td>";?> <a href="<?php echo $article["Image_Article"]; ?>" target="_blank"> <img src="<?php echo $article["Image_Article"]; ?>" height="50" width="50"> <?php echo "</td>";
+         echo '<td> <button type="button" class="btn btn-outline-primary">Ajouter</button> </td>';
          echo "</tr>";
         if (++$i == 15) break;
         }
@@ -25,8 +26,9 @@ include("./Model/article.inc.php");
             echo "<tr>";
             echo "<td>"; echo $article["Reference_Article"]; echo "</td>";
             echo "<td>"; echo $article["Nom_Article"]; echo "</td>";
-            echo "<td>"; echo $article["Prix_Article"]; echo "</td>";
-            echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="100" width="100"> <?php echo "</td>";
+            echo "<td>"; echo $article["Prix_Article"]; echo "€</td>";
+            echo "<td>";?> <<a href="<?php echo $article["Image_Article"]; ?>" target="_blank"> <img src="<?php echo $article["Image_Article"]; ?>" height="50" width="50"> <?php echo "</td>";
+            echo '<td> <button type="button" class="btn btn-outline-primary">Ajouter</button> </td>';
             echo "</tr>";
         }
     }
@@ -40,8 +42,9 @@ elseif(!empty($_POST['rech']))
         echo "<tr>";
          echo "<td>"; echo $article["Reference_Article"]; echo "</td>";
          echo "<td>"; echo $article["Nom_Article"]; echo "</td>";
-         echo "<td>"; echo $article["Prix_Article"]; echo "</td>";
-         echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="100" width="100"> <?php echo "</td>";
+         echo "<td>"; echo $article["Prix_Article"]; echo "€</td>";
+         echo "<td>";?> <img src="<?php echo $article["Image_Article"]; ?>" height="50" width="50"> <?php echo "</td>";
+         echo '<td> <button type="button" class="btn btn-outline-primary">Ajouter</button> </td>';  
          echo "<tr>";
     if (++$i == 15) break;
     }

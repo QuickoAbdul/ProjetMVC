@@ -22,11 +22,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="/projetmvc/index.php">Accueil <span class="sr-only"></span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projetmvc/Vue/conseils.php">Conseils</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projetmvc/Vue/paniers.php">Paniers</a>
+                        <a class="nav-link" href="/projetmvc/Vue/panier.php">Paniers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="/projetmvc/Vue/compte.php">Compte</a>
@@ -34,9 +32,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="/projetmvc/Vue/connexion.php">Connexion</a>
-                    </li>
-
-                    
+                    </li>                   
                 </ul>
             </div>
         </nav>
@@ -45,7 +41,53 @@
         <div class="container">
             <h1>Accueil</h1>
             <div class="d-flex flex-row">
-                    <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title" >Conseils</h5>
+                                <p class="card-text">
+                                    -Astuce: Avant de monter une pièce, préparer chaque outils et assurez vous qu'il fonctionne bien. 
+                                    <p>
+                                    Notice pour monter la piece Montage
+                                    <a href="./img/montage1.jpg" target="_blank"><img src="./img/montage1.jpg" height="100" width="200"></a>
+                                    </p>
+                                </p>
+                                <p class="card-text">
+                                    Conseils pour monter la piece Numéro 2
+                                    <a href="./img/montage2.jpg" target="_blank"><img src="./img/montage2.jpg" height="100" width="200"></a>
+                                </p>
+                                <p class="card-text">
+                                -Quand une envie de bricoler vous prend, et qu’il vous manque un outil c’est frustrant. P.M.U a la solution
+                                <p>
+                                -Catalogue de nos pièces
+                                <a href="./img/toutespieces.jpg" target="_blank"><img src="./img/toutespieces.jpg" height="200" width="200"></a>
+                                </p>
+                                </p>
+                        </div>
+                    </div> 
+                <div class="card" style="width: 32rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Articles</h5>
+                                <p class="card-text">
+                                    <table class="center">
+                                            <tr><th>Reference</th><th>Nom</th><th>Prix</th></tr>
+                                            <?php require("Controller/affichearticle.con.php"); ?>
+                                    </table class="center">
+                                </p>
+                        </div>
+                </div>
+                <div class="card" style="width: 22rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dernieres ventes</h5>
+                                <p class="card-text">
+                                <table class="center">
+                                            <tr><th>Reference</th><th>Nom</th><th>Prix</th></tr>
+                                            <?php require("Controller/ventearticle.con.php"); ?>
+                                    </table>
+                                </p>
+                        </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
                         <div class="card-body">
                                 <h5 class="card-title">Catégories</h5>
                                     <p class="card-text">
@@ -62,27 +104,10 @@
                                         </select>
                                         <input type="submit">
                                         </form>
+                                        Choisissez la catégories de la pièce que vous souhaitez
                                     </p>
                         </div>
                     </div>
-                <div class="card" style="width: 32rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Articles</h5>
-                                <p class="card-text">
-                                    <table>
-                                            <tr><th>Reference</th><th>Nom</th><th>Prix</th></tr>
-                                            <?php require("Controller/affichearticle.con.php"); ?>
-                                    </table>
-                                </p>
-                        </div>
-                </div>
-                <div class="card" style="width: 32rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Dernieres ventes</h5>
-                                <p class="card-text"></p>
-                        </div>
-                </div>
-            </div>
             <div class="d-flex flex-column">
             <div class="card" style="width: 18rem;">
                     <div class="card-body">
@@ -100,12 +125,7 @@
                             </p>
                     </div>  
                 </div>                 
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Conseils</h5>
-                                <p class="card-text"></p>
-                        </div>
-                    </div>  
+                     
 
         </div>
 
