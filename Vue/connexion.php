@@ -14,33 +14,33 @@
 
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">P.M.U</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/projet/index.php">Accueil <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projet/vue/conseils.php">Conseils</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/projet/vue/paniers.php">Paniers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="/projet/vue/compte.php">Compte</a>
-                </li>
+            <a class="navbar-brand" href="#">P.M.U</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/projetmvc/index.php">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projetmvc/Vue/conseils.php">Conseils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projetmvc/Vue/paniers.php">Paniers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="/projetmvc/Vue/compte.php">Compte</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/projet/vue/connexion.php">Connexion</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projetmvc/Vue/connexion.php">Connexion</a>
+                    </li>
 
-
-            </ul>
-        </div>
-    </nav>
+                    
+                </ul>
+            </div>
+        </nav>
         <section class="vh-100 gradient-custom">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">

@@ -45,27 +45,31 @@
         <div class="container">
             <h1>Accueil</h1>
             <div class="d-flex flex-row">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Rechercher
-                        </h5>
-                            <p class="card-text">  
-                                <form class="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                                        OK
-                                    </button>     
-                                </form>
-                            </p>
-                    </div>  
-                </div>       
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                                <h5 class="card-title">Catégories</h5>
+                                    <p class="card-text">
+                                        <form action="" method="post">
+                                        <select id="cat" name="cat" >
+                                            <option value=null>Aucun</option>
+                                            <option value=1>Attache</option>
+                                            <option value=2>Bande</option>
+                                            <option value=3>Vissement</option>
+                                            <option value=4>Plaque</option>
+                                            <option value=5>Montage</option>
+                                            <option value=6>Poulie</option>
+                                            <option value=7>Autres</option>
+                                        </select>
+                                        <input type="submit">
+                                        </form>
+                                    </p>
+                        </div>
+                    </div>
                 <div class="card" style="width: 32rem;">
                         <div class="card-body">
                             <h5 class="card-title">Articles</h5>
                                 <p class="card-text">
                                     <table>
-                                            <caption>Top article</caption>
                                             <tr><th>Reference</th><th>Nom</th><th>Prix</th></tr>
                                             <?php require("Controller/affichearticle.con.php"); ?>
                                     </table>
@@ -80,14 +84,21 @@
                 </div>
             </div>
             <div class="d-flex flex-column">
-        
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Catégories</h5>
-                                <p class="card-text"></p>
-                        </div>
-                    </div>
-                
+            <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Rechercher
+                        </h5>
+                            <p class="card-text">  
+                                <form action="" method="post">
+                                    <input id="rech" name="rech" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                        OK
+                                    </button>
+                                </form>
+                            </p>
+                    </div>  
+                </div>                 
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Conseils</h5>
