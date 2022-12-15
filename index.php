@@ -12,26 +12,26 @@
 
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">P.M.U</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white" href="/projetmvc/index.php" >P.M.U</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/projetmvc/index.php">Accueil <span class="sr-only"></span></a>
+                        <a class="nav-link text-white" href="/projetmvc/index.php">Accueil <span class="sr-only"></span></a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projetmvc/Vue/panier.php">Paniers</a>
+                        <a class="nav-link text-white" href="/projetmvc/panier.php">Paniers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="/projetmvc/Vue/compte.php">Compte</a>
+                        <a class="nav-link disabled text-white" href="/projetmvc/compte.php">Compte</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/projetmvc/Vue/connexion.php">Connexion</a>
+                        <a class="nav-link text-white" href="/projetmvc/connexion.php">Connexion</a>
                     </li>                   
                 </ul>
             </div>
@@ -68,10 +68,12 @@
                         <div class="card-body">
                             <h5 class="card-title">Articles</h5>
                                 <p class="card-text">
-                                    <table class="center">
-                                            <tr><th>Reference</th><th>Nom</th><th>Prix</th></tr>
+                                <div style="max-height:680px; overflow:auto;">
+                                    <table class="table table-dark center">
+                                            <tr><th>Reference</th><th>Nom</th><th>Prix</th><th>Image</th></tr>
                                             <?php require("Controller/affichearticle.con.php"); ?>
-                                    </table class="center">
+                                    </table>
+                                </div>
                                 </p>
                         </div>
                 </div>
@@ -83,6 +85,7 @@
                                             <tr><th>Reference</th><th>Nom</th><th>Prix</th></tr>
                                             <?php require("Controller/ventearticle.con.php"); ?>
                                     </table>
+                                    <h6 style="margin-top:70px"><a href="#">Voir nos promos</a></h6>
                                 </p>
                         </div>
                 </div>
@@ -102,7 +105,7 @@
                                             <option value=6>Poulie</option>
                                             <option value=7>Autres</option>
                                         </select>
-                                        <input type="submit">
+                                        <button style="margin-left: 20px"class="btn btn-dark" type="submit">Rechercher</button>
                                         </form>
                                         Choisissez la catégories de la pièce que vous souhaitez
                                     </p>
@@ -118,7 +121,7 @@
                                 <form action="" method="post">
                                     <input id="rech" name="rech" class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
                                     (Par exemple: Bande)
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                    <button class="btn btn-dark" type="submit">
                                     Rechercher
                                     </button>
                                 </form>

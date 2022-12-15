@@ -13,26 +13,26 @@
 
 
     <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">  P.M.U</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white" href="/projetmvc/index.php" >P.M.U</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/projetmvc/index.php">Accueil <span class="sr-only"></span></a>
+                        <a class="nav-link text-white" href="/projetmvc/index.php">Accueil <span class="sr-only"></span></a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/projetmvc/Vue/panier.php">Paniers</a>
+                        <a class="nav-link text-white" href="/projetmvc/panier.php">Paniers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="/projetmvc/Vue/compte.php">Compte</a>
+                        <a class="nav-link disabled text-white" href="/projetmvc/compte.php">Compte</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/projetmvc/Vue/connexion.php">Connexion</a>
+                        <a class="nav-link text-white" href="/projetmvc/connexion.php">Connexion</a>
                     </li>                   
                 </ul>
             </div>
@@ -46,8 +46,8 @@
 
                                 <div class="mb-md-5 mt-md-4 pb-5">
 
-                                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                                    <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                                    <h2 class="fw-bold mb-2 text-uppercase">Connexion</h2>
+                                    <p class="text-white-50 mb-5">Entrez votre email et mot de passe!</p>
 
                                     <div class="form-outline form-white mb-4">
                                         <input type="email" id="typeEmailX" class="form-control form-control-lg" />
@@ -56,12 +56,11 @@
 
                                     <div class="form-outline form-white mb-4">
                                         <input type="password" id="typePasswordX" class="form-control form-control-lg" />
-                                        <label class="form-label" for="typePasswordX">Password</label>
+                                        <label class="form-label" for="typePasswordX">Mot de passe</label>
                                     </div>
 
-                                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
 
-                                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Connexion</button>
 
                                     <div class="d-flex justify-content-center text-center mt-4 pt-1">
                                         <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
@@ -72,7 +71,6 @@
                                 </div>
 
                                 <div>
-                                    <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
                                     </p>
                                 </div>
 
@@ -82,3 +80,4 @@
                 </div>
             </div>
         </section>
+</body>

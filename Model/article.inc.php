@@ -33,5 +33,24 @@ function getVenteArticle()
       $article = $reponse->fetchAll(PDO::FETCH_ASSOC);
       return $article;
    }
+/*function insertCommande()
+{
+   try {
+      $conn = connexionPDO();
+
+      $reponse = $conn->prepare("insert into Commande values (null, :id_com, :date_com, :id_article, :id_client)");
+      $req->bindValue(':id_com', $id_com, PDO::PARAM_INT);
+      $req->bindValue(':date_com', $date_com, PDO::PARAM_DATE);
+      $req->bindValue(':id_article', $id_article, PDO::PARAM_INT);
+      $req->bindValue(':id_client', $id_client, PDO::PARAM_INT);
+      
+      $resultat = $req->execute();
+
+  } catch (PDOException $e) {
+      print "Erreur !: " . $e->getMessage();
+      die();
+  }
+  return $res;
+}*/
 
 
